@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Guess the Word</title>
+  </head>
+  <body>
+    <div class="Game">
+      <input type="text" maxlength="1" />
+      <h1>Guess the Word</h1>
+      <div class="content">
+        <div class="words"></div>
+        <div class="details">
+          <p class="hint">Hint: <span> </span></p>
+          <p class="guess-left">Remaining guesses: <span>8</span></p>
+          <p class="wrong-letter">Wrong letters: <span> </span></p>
+        </div>
+        <button>Reset Game</button>
+      </div>
+    </div>
+    <div class="popup-container">
+      <div class="popup">
+        <h2 id="popup-message"></h2>
+        <p id="popup-word-info"></p>
+      </div>
+    </div>
+    <script src="words.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
